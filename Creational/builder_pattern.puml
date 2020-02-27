@@ -1,0 +1,35 @@
+@startuml
+
+class Pizza {
+  -crust
+  -toppings
+  -sauce
+  +setCrust()
+  +setToppings()
+  +setSauce()
+}
+
+interface PizzaBuilder {
+  #Pizza pizza_
+  +buildCrust() = 0
+  +buildToppings() = 0
+  +buildSauce() = 0
+}
+
+class ItalianPizzaBuilder {
+}
+
+class HawaiianPizzaBuilder {
+}
+
+class Cook {
+  +setPizzaBuilder(Builder& builder)
+  +makePizza()
+}
+
+PizzaBuilder *-left- Pizza
+PizzaBuilder <|-- ItalianPizzaBuilder
+PizzaBuilder <|-- HawaiianPizzaBuilder
+Cook -left-> PizzaBuilder
+
+@enduml
