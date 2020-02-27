@@ -11,9 +11,10 @@ class Pizza {
 
 interface PizzaBuilder {
   #Pizza pizza_
-  +buildCrust() = 0
-  +buildToppings() = 0
-  +buildSauce() = 0
+  +buildCrust()
+  +buildToppings()
+  +buildSauce()
+  +getPizza() : Pizza 
 }
 
 class ItalianPizzaBuilder {
