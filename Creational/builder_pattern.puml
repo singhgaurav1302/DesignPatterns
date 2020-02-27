@@ -11,6 +11,7 @@ class Pizza {
 
 interface PizzaBuilder {
   #Pizza pizza_
+  +makePizza()
   +buildCrust()
   +buildToppings()
   +buildSauce()
@@ -24,8 +25,8 @@ class HawaiianPizzaBuilder {
 }
 
 class Cook {
-  +setPizzaBuilder(Builder& builder)
-  +makePizza()
+  +preparePizza(Builder& builder)
+  +openPizza()
 }
 
 PizzaBuilder *-left- Pizza
