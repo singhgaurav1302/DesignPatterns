@@ -1,5 +1,8 @@
 @startuml
-class Factory
+class Factory {
+ + createShape() : Shape
+}
+
 abstract Shape {
   + virtual draw() = 0
   + virtual ~Shape() = default
