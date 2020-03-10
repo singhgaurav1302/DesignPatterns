@@ -1,0 +1,16 @@
+@startuml
+class Factory
+abstract Shape {
+  + virtual draw() = 0
+  + virtual ~Shape() = default
+}
+
+class Rectangle
+class Square
+class Triangle
+
+Shape <-right- Factory
+Shape <|-down- Rectangle
+Shape <|-down- Square
+Shape <|-down- Triangle
+@enduml
