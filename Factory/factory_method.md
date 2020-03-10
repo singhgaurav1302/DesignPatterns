@@ -1,0 +1,1 @@
+![factory_method_uml](http://www.plantuml.com/plantuml/svg/BSux3i8m38VnlQSe5wXvR4mT41iIDq0cDKcangdiVq3SdWTCt_ZxHWSRMfaxPCpI7pcWshC_2LATkcwLDSnjaZu1Y--9Z1z3p4ZjsbmiL8KeXb0BUTQO8ZVZ-sQttj91F4SzCo2cJeKTOlG7wFRhfNoXOVaiZABJkoy0)
