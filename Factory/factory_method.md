@@ -39,7 +39,6 @@ class Triangle : public Shape {
 public:
     void draw() override { std::cout << "Draw Triangle\n"; }
 };
-
     
 class ShapeFactory {
 public:
@@ -53,6 +52,7 @@ public:
             case ShapeType::TRIANGLE:
                 return std::make_unique<Square>();
         }
+        return nullptr;
     }
 };
     
